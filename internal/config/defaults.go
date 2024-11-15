@@ -13,6 +13,9 @@ func DefaultConfig() *Config {
 	return &Config{
 		Scanner: ScannerConfig{
 			IgnorePatterns: []string{
+				".next",
+				"webpack",
+				".contentlayer",
 				".git",
 				"node_modules",
 				".idea",
