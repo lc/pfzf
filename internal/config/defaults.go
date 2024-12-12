@@ -27,7 +27,7 @@ func DefaultConfig() *Config {
 				"*.bin",
 				"*.dat",
 			},
-			MaxFileSize: 1 << 20, // 1MB
+			MaxFileSize: 4 << 20, // 4MB
 			MaxFiles:    1000,
 		},
 		Processor: ProcessorConfig{

@@ -72,7 +72,7 @@ func (s *Scanner) Configure(opts ...Option) error {
 func DefaultOptions() []Option {
 	return []Option{
 		WithRootDir("."),
-		WithMaxFileSize(1 << 20), // 1MB
+		WithMaxFileSize(5 << 20), // 5MB
 		WithMaxFiles(1000),
 		WithIgnorePattern(
 			".git",

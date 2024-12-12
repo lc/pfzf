@@ -96,10 +96,11 @@ func (p *Processor) ShouldProcess(entry types.FileEntry) bool {
 		return false
 	}
 
+	// TODO: this is very inaccurate comparison lol
 	// Don't process files larger than max tokens (rough estimate)
-	if p.opts.MaxTokens > 0 && entry.Size > int64(p.opts.MaxTokens*4) {
+	/*if p.opts.MaxTokens > 0 && entry.Size > int64(p.opts.MaxTokens*4) {
 		return false
-	}
+	}*/
 
 	return true
 }

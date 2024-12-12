@@ -4,7 +4,7 @@ Interactively generate structured context files from your codebase, designed for
 
 Kind of inspired by `fzf`. I put 0 effort in, not responsible for anything.
 
-> ⚠️ **Alpha Status**: This project is in early development. APIs and features may change significantly. Or not at all cause i'm lazy.
+> ⚠️ **Alpha Status**: This project is in early development, written mostly with Claude because I was lazy and needed this quickly. APIs and features may change significantly.
 > 
 
 
