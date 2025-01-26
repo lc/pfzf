@@ -71,6 +71,16 @@ func LoadConfig(path string) (*Config, error) {
 		return nil, fmt.Errorf("parsing config file: %w", err)
 	}
 
+	var extension string
+	switch config.Writer.Format {
+	case types.OutputFormatJSON:
+		extension = ".json"
+	case types.OutputFormatYAML:
+		extension = ".yaml"
+	default:
+		extension = ".xml"
+	}
+	config.Writer.OutputPath = generateRandomFilename(extension)
 	return &config, nil
 }
 

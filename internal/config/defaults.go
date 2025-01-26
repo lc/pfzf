@@ -26,6 +26,8 @@ func DefaultConfig() *Config {
 				"*.dylib",
 				"*.bin",
 				"*.dat",
+				"_build",
+				"deps",
 			},
 			MaxFileSize: 4 << 20, // 4MB
 			MaxFiles:    1000,
